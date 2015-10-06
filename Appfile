@@ -1,0 +1,9 @@
+application {
+  name = "otto-memcached"
+  type = "docker-external"
+}
+
+customization "docker" {
+  image = "memcached"
+  run_args = "-m 64"
+}
